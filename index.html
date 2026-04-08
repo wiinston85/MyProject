@@ -9,14 +9,17 @@
   <body>
     <main class="app">
       <h1>Todo List</h1>
- 
+      <p class="timezone-info">Timezone: Singapore (SGT)</p>
+
+      <div id="error-messages" class="error-messages"></div>
+
       <form id="todo-form" class="todo-form">
         <input
           id="todo-input"
           type="text"
-          placeholder="Add a new todo"
+          placeholder="Add a new todo (1-200 characters)"
           autocomplete="off"
-          required
+          maxlength="200"
         />
         <button type="submit">Add</button>
       </form>
